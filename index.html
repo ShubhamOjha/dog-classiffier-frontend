@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dog Classifier</title>
+  
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body style="text-align:center; position:absolute; left:450px; top:150px;">
+
+  <div id="root">
+	  <h1>Welcome to Dog Classifer</h1>
+  <div class="input-file-container">  
+  <input type="file" id="file" name="file" class="input-file" />
+  <label tabindex="0" for="file" class="input-file-trigger" style="position:absolute; left:100px; top:80px;">Select a photo</label>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <p class="file-return"></p>
+  <div>
+	  <button onclick="upload_pic()" class="button" style="margin-bottom:50px;">Submit</button>
+	<br/>
+	<label id='detect'></label>
+	<br/>
+	<img style="width: 300px; height: 300px;" id="output_image" />
+</div>
+  <br/>
+  <br/>
+  </div
+   >
+   <div id="loader" class="loader loader-double is-active"></div>
+   <div id='response'>
+  </div>
+  <div>
+          <label id='breed'></label>
+	  <br/>
+	  <br/>
+	  <img style="width: 300px; height: 300px;" id='dog_image' />
+  </div>
+<script src="scripts.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
